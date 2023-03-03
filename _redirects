@@ -1,5 +1,5 @@
 # Redirect default Netlify subdomain to primary domain    (! forces the redirect)
-https://whereisourplayground.netlify.com/*  https://www.whereisourplayground.org/:splat		301
+https://whereisourplayground.netlify.app/*  https://www.whereisourplayground.org/:splat		301
 
 # https://whereisourplayground.org/*			https://www.whereisourplayground.org/:splat		301!
 # 
