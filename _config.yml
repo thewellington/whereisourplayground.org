@@ -21,6 +21,9 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://whereisourplayground.org" # the base hostname & protocol for your site, e.g. http://example.com
 
+google-analytics-id: "G-36P0YGGG1N"
+
+
 # Build settings
 #theme: minima
 plugins:
