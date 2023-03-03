@@ -9,7 +9,7 @@ https://whereisourplayground.netlify.app/*  https://www.whereisourplayground.org
 # https://whereisourplayground.net/*			https://www.whereisourplayground.org/:splat		301!
 # https://www.whereisourplayground.net/*		https://www.whereisourplayground.org/:splat		301!
 # 
-# https://wheresourplayground.org/*			https://www.whereisourplayground.org/:splat		301!
+https://wheresourplayground.org/*			https://www.whereisourplayground.org/:splat		301!
 # https://www.wheresourplayground.org/*		https://www.whereisourplayground.org/:splat		301!
 # https://wheresourplayground.com/*			https://www.whereisourplayground.org/:splat		301!
 # https://www.wheresourplayground.com/*		https://www.whereisourplayground.org/:splat		301!
