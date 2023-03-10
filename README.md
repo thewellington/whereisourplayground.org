@@ -1,0 +1,3 @@
+# Where Is Our Playground‽
+
+Welcome to the project. Here we try to hold Seattle Parks accountable for the numerous delays and promises that they fail to keep. If you have a park or playground in mind, that Seattle Parks has been ignoring, or hoping you are not paying attention to, please create a pull request against this repo, with a new page detailing the situation in your park. Use the page to “get the information out” to your community, demanding that Seattle Parks take notice!
