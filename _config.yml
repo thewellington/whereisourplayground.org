@@ -28,6 +28,7 @@ google-analytics-id: "G-36P0YGGG1N"
 #theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-redirect-from
 
 # File Processing
 #
@@ -46,3 +47,8 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+
+collections:
+  parks:
+    output: true
+    permalink: /parks/:path/ 
