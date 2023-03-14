@@ -1,6 +1,69 @@
-<div id="timeline" class="container-fluid">
-  <div class="container py-5">
+---
+layout: page
+title: Lincoln Park (South) # The title of your page
 
+section-links:
+  - id: "#welcome"
+    title: "Welcome"
+  - id: "#timeline"
+    title: "Timeline"
+  - id: "#by-the-numbers"
+    title: "By The Numbers"
+  - id: "#how-to-help"
+    title: "How To Help"
+---
+<!-- use the frontmatter above to create a yaml array for section links.  Each main .container-fluid below has a unique id.  Use that id here, to create links in the navbar to take you to each section -->
+
+
+
+<div id="carouselSplash" class="carousel carousel-dark slide" data-bs-ride="carousel">
+	<!-- this first div will contain one or more landsape photos of your park.  Add the photos to .carousel-inner and make sure there are enought buttons.-->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselSplash" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselSplash" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselSplash" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselSplash" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/assets/images/IMG_5756.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/images/IMG_5757.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/images/IMG_5759.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/images/IMG_5760.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
+
+<div id="lead" class="container py-5">
+<!-- this div can contain the initial statement of your park's issue.-->
+  <p class="lead">In <strong>July 2017</strong>, after having already removed the zip line swing from the Lincoln Park South Play Area, Seattle Parks closed and subsequently removed the play structure citing termite damage as the reason.  Over the intervening years Seattle Parks has published replacement schedule after replacement schedule, each time citing various delays.  <strong>Today we ask...</strong></p>
+</div>
+
+<!-- Keep the site title here... -->
+<h1 class="display-1 text-center">{{ site.title }}</h1>
+
+<!-- ...and the navbar here -->
+{% include navbar.html %}
+
+<div id="welcome" class="container-fluid text-bg-success">
+<!-- Your Welcome statement goes here -->
+  <div class="container py-5">
+      <h2 class="display-3 text-center">Welcome</h2>
+      <p>A half-generation of kids growing up near the South end of Lincoln Park have been without a playground they can easily access for almost six years. That is more than 2000 days!  Each time  Parks provides communication regarding this project it is only to push it back by another six months to a year.  Here we are now {{ site.data.numbers.number-of-delays }} updates later and we seem no closer to breaking ground on the promised play area replacement.</p>
+
+      <p>It begs the question, is Seattle Parks being run in an efficient and effective manner?  How are our taxpayer dollars being spent?  How do we trust the word of Seattle Parks again?</p>
+  </div>
+</div>
+
+<div id="timeline" class="container-fluid">
+<!-- another div to contain a timeline or some other content -->
+  <div class="container py-5">
     <h2 class="display-3 text-center">Timeline</h2>
     <div class="container">
 			<div class="row">
@@ -59,3 +122,40 @@
   	<p class="small">Source: <a href="https://www.fauntleroy.net/issues/lincoln-park-south-play-area-closure/" target="_blank">Fauntleroy Community Association</a>
   </div>
 </div>
+
+<div id="by-the-numbers" class="conatiner-fluid text-bg-success">
+<!-- another div to contain a block of content -->
+	<div class="container py-5">
+	    <h2 class="display-3 text-center">By The Numbers...</h2>
+		<div class="row py-5">
+			<div class="col border-end">
+				<p class="h1 display-1 text-center">{{ site.data.numbers.number-of-delays }}</p>
+				<p class="h3 text-center test-wrap"><small>delays since July 2017</small></p>
+			</div>
+			<div class="col border-end">
+				<p class="h1 display-1 text-center">{{ site.time | date: "%s"| minus: 1499842800 | divided_by: 3600 | divided_by: 24 }}</p>
+				<p class="h3 text-center text-wrap"><small>number of days since play area closure<br /><span class="fs-6">(July 12, 2017)</span></small></p>
+			</div>
+			<div class="col">
+				<p class="h1 display-1 text-center">1631</p>
+				<p class="h3 text-center text-wrap"><small>average number of elementary aged students enrolled in neighborhood schools each year<br /><span class="fs-6"> (Getewood, Arbor Heights, West Seattle Elem., and Roxhill)</span></small></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="how-to-help" class="container-fluid">
+<!-- Final DIV, how can people help you -->
+
+  <div class="container py-5">
+		<h2 class="display-3 text-center">How You Can Help</h2>
+		<p>Seattle Parks is not a very responsive organization.  In fairness they are understaffed and underfunded like every other part of our city.  If you want change, you are going to have to work at it.  Here are some things you can do to help.
+		
+	<ol>
+		<li><strong>Monitor the City's project page:</strong> <a href="https://www.seattle.gov/parks/about-us/projects/lincoln-park-south-play-area-renovation" target="_blank">https://www.seattle.gov/parks/about-us/projects/lincoln-park-south-play-area-renovation</a></li>
+		<li><strong>Contact Shannon Glass</strong> at Seattle Parks.  Ask for a <mark>project update</mark> and a <mark>full accounting of the project's delays dating back to 2017.</mark>  Shannon can be reached by email at <a href="mailto:Shannon.Glass@seattle.gov">Shannon.Glass@seattle.gov</a> or by phone at <a href="tel:+12067339319">206-733-9319</a></li>
+		<li><strong>Contact Councilmember Lisa Herbold.</strong>  Ask her when Parks will make good on one of their {{ site.data.numbers.number-of-delays }} delays since the start of the Lincoln Park South Play Area Replacement Project.  Council Member Herbold's contact info is here: <a href="https://www.seattle.gov/council/herbold" target="_blank">https://www.seattle.gov/council/herbold</a>
+  </div>
+</div>
+
+<!-- We will autonatically add the footer at the end. here. -->
