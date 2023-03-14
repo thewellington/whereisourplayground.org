@@ -11,19 +11,23 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#welcome">Welcome</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Parks
+          </a>
+          <ul class="dropdown-menu">
+          	{% assign park = site.parks %}
+          	{% for page in park %}
+            <li><a class="dropdown-item" href="{{ page.url }}">{{ page.title }}</a></li>
+            {% endfor %}
+          </ul>
         </li>
+        {% assign links = page.section-links %}
+		{% for link in links %}
         <li class="nav-item">
-          <a class="nav-link" href="#timeline">Timeline</a>
+          <a class="nav-link" href="{{ link.id }}">{{ link.title }}</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#by-the-numbers">By The Numbers</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#how-to-help">How Can You Help</a>
-        </li>
-
+        {% endfor %}
       </ul>
     </div>
   </div>
