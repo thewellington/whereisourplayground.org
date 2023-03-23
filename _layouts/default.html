@@ -3,9 +3,13 @@
 	<head>
 		<meta charset="utf-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+		
+		{% if page.title %}
+		<title>{{ page.title }}</title>
+		{% else %}
 		<title>{{ site.title }}</title>
-
+		{% endif %}
+		
 		<meta name="description" content="{{ site.description }}" />
 		<meta name="keywords" content="West Seattle, Lincoln Park, Fauntleroy, Gatewood, Arbor Heights,  Colman, pool, community, neighborhood, ferry, Vashon, Southworth, children, " />
 		<!-- open graph metadata -->
