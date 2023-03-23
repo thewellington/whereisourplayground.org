@@ -1,4 +1,5 @@
-# Redirect default Netlify subdomain to primary domain    (! forces the redirect)
+# Redirect default Netlify subdomain to primary domain
+# (! forces the redirect)
 https://whereisourplayground.netlify.app/*  https://whereisourplayground.org/:splat		301!
 
 https://www.whereisourplayground.org/*		https://whereisourplayground.org/:splat		301!
