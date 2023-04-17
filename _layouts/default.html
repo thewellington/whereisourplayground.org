@@ -11,16 +11,19 @@
 	  {% endif %}
 		
 		<meta name="description" content="{{ site.description }}" />
-		<meta name="keywords" content="West Seattle, Lincoln Park, Fauntleroy, Gatewood, Arbor Heights,  Colman, pool, community, neighborhood, ferry, Vashon, Southworth, children, " />
+      {%- if page.keywords %}{%- assign keywords = page.keywords | concat: site.keywords %}
+        <meta name="keywords" content="{{ keywords | uniq | join: ', ' }}" />
+      {%- else %}
+        <meta name="keywords" content="{{ site.keywords | uniq | join: ', ' }}" />
+      {%- endif %}
 
-		<!-- open graph  and twitter metadata -->
+	<!-- open-graph and twitter metadata -->
 		<meta property="og:locale" content="en_US" />
 		<meta property="og:type" content="webpage" />
         <meta name="twitter:card" content="summary_large_image">
         <meta property="twitter:domain" content="{{ site.url }}">
 		<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
         <meta property="twitter:url" content="{{ site.url }}{{ page.url }}">
-
 	  {% if page.title %}
 		<meta property="og:title" content="{{ page.title }}">
 		<meta property="og:site_name" content="{{ page.title }}"> 
@@ -30,7 +33,6 @@
 		<meta property="og:site_name" content="{{ site.title }}"> 
         <meta name="twitter:title" content="{{ site.title }}">
 	  {% endif %}	  
-
 	  {% if page.description %}
 		<meta property="og:description" content="{{ page.description }}">
 		<meta name="twitter:description" content="{{ page.description }}">
@@ -38,7 +40,6 @@
 		<meta property="og:description" content="{{ site.description }}">
 		<meta name="twitter:description" content="{{ site.description }}">
 	  {% endif %}
-
 	  {% if page.open-graph.image %}	
 		<meta property="og:image" content="{{ site.url }}{{ page.open-graph.image }}" />
         <meta name="twitter:image" content="{{ site.url }}{{ page.open-graph.image }}">
@@ -46,15 +47,12 @@
 		<meta property="og:image" content="{{ site.url }}/assets/images/lincoln-park-south/IMG_5759.jpg" />
         <meta name="twitter:image" content="{{ site.url }}/assets/images/lincoln-park-south/IMG_5759.jpg">
       {% endif %}
-<!--
-		<meta property="og:image:alt" content="" />
-		<meta property="ogimage:width" content="">
-		<meta property="ogimage:height" content="">
- -->
-
-
-
-
+      <!--
+        <meta property="og:image:alt" content="" />
+        <meta property="ogimage:width" content="">
+        <meta property="ogimage:height" content="">
+      -->
+	<!-- end open-graph and twitter metadata -->
 
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 		<link rel="stylesheet" href="/assets/css/style.css" />

@@ -18,6 +18,9 @@ title: "Where Is Our Playground&#8253;"
 email: ""
 description: >- # this means to ignore newlines until "baseurl:"
   Seattle Parks and Recreation has a documented history of removing play areas and other features with no coherent plan for their timely replacement. Today we ask...  Where is our Playground&#8253;
+keywords: [ "playground", "park", "recreation", "community", "neighborhood", "children", "Seattle Parks", "Seattle", "city", ]
+
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://whereisourplayground.org" # the base hostname & protocol for your site, e.g. http://example.com
 
