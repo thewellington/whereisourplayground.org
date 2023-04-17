@@ -14,10 +14,10 @@
 #
 # Site settings
 
-title: "Where Is Our Playground &#8253;"
+title: "Where Is Our Playground&#8253;"
 email: ""
 description: >- # this means to ignore newlines until "baseurl:"
-  In July 2017 Seattle Parks Department removed our playground.  We want it back.
+  Seattle Parks and Recreation has a documented history of removing play areas and other features with no coherent plan for their timely replacement. Today we ask...  Where is our Playground&#8253;
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://whereisourplayground.org" # the base hostname & protocol for your site, e.g. http://example.com
 
