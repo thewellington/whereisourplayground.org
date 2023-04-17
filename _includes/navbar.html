@@ -1,6 +1,8 @@
 <nav class="navbar navbar-expand-lg sticky-top bg-warning">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Home</a>
+<!-- 
+    <a class="navbar-brand" href="/">Home</a>
+ -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -12,18 +14,19 @@
         </li>
  -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Parks
-          </a>
+          <a class="nav-link active navbar-brand dropdown-toggle" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{ page.title }}</a>
           <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/">Home</a></li>
           	{% assign park = site.parks %}
           	{% for page in park %}
             <li><a class="dropdown-item" href="{{ page.url }}">{{ page.title }}</a></li>
             {% endfor %}
           </ul>
         </li>
+
+        <li><a class="nav-link" href="#">Top</a></li>
         {% assign links = page.section-links %}
-		{% for link in links %}
+		    {% for link in links %}
         <li class="nav-item">
           <a class="nav-link" href="{{ link.id }}">{{ link.title }}</a>
         </li>
