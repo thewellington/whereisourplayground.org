@@ -1,6 +1,6 @@
 ---
-layout: home
-published : false
+layout: page
+published : true
 ---
 <div id="carouselSplash" class="carousel carousel-dark slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
@@ -8,19 +8,35 @@ published : false
     <button type="button" data-bs-target="#carouselSplash" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselSplash" data-bs-slide-to="2" aria-label="Slide 3"></button>
     <button type="button" data-bs-target="#carouselSplash" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselSplash" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    <button type="button" data-bs-target="#carouselSplash" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    <button type="button" data-bs-target="#carouselSplash" data-bs-slide-to="6" aria-label="Slide 7"></button>
+    <button type="button" data-bs-target="#carouselSplash" data-bs-slide-to="7" aria-label="Slide 8"></button>
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="/assets/images/IMG_5756.jpg" class="d-block w-100" alt="...">
+      <img src="/assets/images/lincoln-park-south/IMG_5756.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="/assets/images/IMG_5757.jpg" class="d-block w-100" alt="...">
+      <img src="/assets/images/lincoln-park-south/IMG_5757.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="/assets/images/IMG_5759.jpg" class="d-block w-100" alt="...">
+      <img src="/assets/images/lincoln-park-south/IMG_5759.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="/assets/images/IMG_5760.jpg" class="d-block w-100" alt="...">
+      <img src="/assets/images/lincoln-park-south/IMG_5760.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/images/westcrest-play-area/IMG_5856.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/images/westcrest-play-area/IMG_5857.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/images/hiawatha-play-area/IMG_5859.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/images/hiawatha-play-area/IMG_5860.jpg" class="d-block w-100" alt="...">
     </div>
   </div>
 </div>
@@ -31,3 +47,29 @@ published : false
 
   <h1 class="display-1 text-center">{{ site.title }}</h1>
 
+{% include navbar.html %}
+
+<div id="welcome" class="container-fluid text-bg-light">
+  <div class="container py-5">
+  
+      <h2 class="display-3 text-center">Seattle Parks is hoping you forget about these parks...</h2>
+
+     	{% assign park = site.parks %}      
+      <div class="row row-cols-2 row-cols-md-4 g-4">
+     	{% for p in park %}
+        <div class="col-12">
+          <div class="card text-bg-success mb-3 h-100 w-100">
+            <img src="{{ p.open-graph.image }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{ p.title }}</h5>
+              <p class="card-text">{{ p.description | truncate: 135 }}</p>
+            </div>
+            <div class="card-footer">
+              <a href="{{ p.url }}" class="btn btn-warning">More Detail</a>
+            </div>
+          </div> <!-- end card -->
+        </div>
+      {% endfor %}
+      </div> <!-- end row -->
+  </div>
+</div>

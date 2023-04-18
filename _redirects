@@ -19,6 +19,11 @@ https://www.wheresourplayground.com/*		https://whereisourplayground.org/:splat		
 https://wheresourplayground.net/*			https://whereisourplayground.org/:splat		301!
 https://www.wheresourplayground.net/*		https://whereisourplayground.org/:splat		301!
 
-/											https://whereisourplayground.org/parks/lincoln-park-south  200!
-/index										https://whereisourplayground.org/parks/lincoln-park-south  200!
-#/hiawatha									https://whereisourplayground.org/parks/hiawatha-play-area  200!
+# /							https://whereisourplayground.org/parks/lincoln-park-south		200!
+# /index					https://whereisourplayground.org/parks/lincoln-park-south		200!
+#/hiawatha					https://whereisourplayground.org/parks/hiawatha-play-area		200!
+
+/lincolnpark				https://whereisourplayground.org/parks/lincoln-park-south		200!
+/lincoln-park				https://whereisourplayground.org/parks/lincoln-park-south		200!
+/lincoln-park-south			https://whereisourplayground.org/parks/lincoln-park-south		200!
+/westcrest					https://whereisourplayground.org/parks/westcrest-play-area		200!
