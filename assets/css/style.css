@@ -14,7 +14,7 @@ div.ribbon {
     font-weight: 600;
     font-size: 24px;
     white-space: nowrap;
-  -webkit-transform: rotate(35deg);
+    -webkit-transform: rotate(35deg);
     -moz-transform: rotate(35deg);
     -ms-transform: rotate(35deg);
     -o-transform: rotate(35deg);
