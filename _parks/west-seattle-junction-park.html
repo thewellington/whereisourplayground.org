@@ -1,0 +1,100 @@
+---
+layout: page
+title: West Seattle Junction Park Development # The title of your page
+description: "Seattle Parks purchased this lot in 2012 to provide the community access"
+# open-graph: 
+#    image: "" # image for facebook and google cards.  also used on homepage cards
+
+published: true  # change to 'true' when you want to publish the page
+
+ribbon-text: "NEW" # blank, so the ribbon doesn't show
+
+parks-dept:
+    link: "https://www.seattle.gov/parks/about-us/projects/west-seattle-junction-park-development"
+    name: "Kelly Goold"
+    phone: "206-684-0586"
+    email: "Kelly.Goold@seattle.gov"
+
+# Each main .container-fluid below has a unique id.  Use that id here, to create links in the navbar to take you to each section.
+
+section-links:
+  - id: "#welcome"
+    title: "Welcome"
+  - id: "#timeline"
+    title: "Timeline"
+  - id: "#by-the-numbers"
+    title: "By The Numbers"
+  - id: "#how-to-help"
+    title: "How To Help"
+
+
+---
+
+
+
+
+<div id="carouselSplash" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <!-- this first div will contain one or more landsape photos of your park.  Add the photos to .carousel-inner and make sure there are enought buttons.-->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselSplash" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselSplash" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselSplash" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselSplash" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/assets/images/IMG_5756.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/images/IMG_5757.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/images/IMG_5759.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/images/IMG_5760.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  {% if page.ribbon-text %}
+  <div class="ribbon">{{ page.ribbon-text }}</div>
+  {% endif %}
+</div>
+
+<div id="lead" class="container py-5">
+<!-- this div can contain the initial statement of your park's issue.-->
+  <p class="lead">Seattle Parks and Recreation purchased .38 acres in 2012 to provide the community access to open space within high density urban areas across the city. The Seattle Park District funds the development of this parcel into a park. The design will incorporate accessibility in compliance with the Americans with Disabilities Act (ADA) and additional park elements will be incorporated after gathering public input. Please participate in the public process as we work together to design your park spaces.   <strong>Today we ask...</strong></p>
+</div>
+
+<!-- Keep the site title here... -->
+<h1 class="display-1 text-center">{{ site.title }}</h1>
+
+<!-- ...and the navbar here -->
+{% include navbar.html %}
+
+<div id="welcome" class="container-fluid">
+<!-- Your Welcome statement goes here -->
+  <div class="container py-5">
+      <h2 class="display-3 text-center">Welcome</h2>
+      
+      <P> Due to COVID and other factors, Seattle Parks has posted the below on their <a href="{{ page.parks-dept.link }}" target="_blank">project page.</a></P>
+      
+      <blockquote class="blockquote">"In the summer of 2020, the City of Seattle turned its focus to essential functions to address the pandemic and economic crisis, which required a significant reprioritization of resources. After careful analysis of equity considerations, health and safety concerns, and alignment with essential functions, Seattle Parks and Recreation (SPR) suspended many capital projects including the West Seattle Junction Park Development project. As promised at the time, SPR worked to restore funding in future budget cycles for suspended projects. In September 2022, the Seattle City Council, acting in their role as Seattle Park District Board, passed a new six-year funding plan for the 2023-2028 Park District cycle which includes funding for this project and many more. SPR staff are now reprioritizing projects in this six-year funding plan using several criteria, including equity, and creating a plan for implementation. We anticipate having a plan in the second quarter of 2023 that will guide our Park District capital work over the next six years. We will update the schedule below when we have the workplan completed."<blockquote>
+  </div>
+</div>
+
+
+<div id="how-to-help" class="container-fluid">
+<!-- Final DIV, how can people help you -->
+
+  <div class="container py-5">
+        <h2 class="display-3 text-center">How You Can Help</h2>
+        <p>Seattle Parks is not a very responsive organization.  In fairness they are understaffed and underfunded like every other part of our city.  If you want change, you are going to have to work at it.  Here are some things you can do to help.
+        
+    <ol>
+        <li><strong>Monitor the City's project page:</strong> <a href="{{ page.parks-dept.link }}" target="_blank">{{ page.parks-dept.link }}</a></li>
+        <li><strong>Contact {{ page.parks-dept.name }}</strong> at Seattle Parks.  Ask for a <mark>project update</mark> and a <mark>full accounting of the project's delays.</mark>  They can be reached by email at <a href="mailto:{{ page.parks-dept.email }}">{{ page.parks-dept.email }}</a> or by phone at <a href="tel:+1{{ page.parks-dept.phone }}">{{ page.parks-dept.phone }}</a></li>
+        <li><strong>Contact Councilmember Lisa Herbold.</strong>  Ask her when Parks will complete the Community Center project.  Council Member Herbold's contact info is here: <a href="https://www.seattle.gov/council/herbold" target="_blank">https://www.seattle.gov/council/herbold</a></li>
+  </div>
+</div>
+
+<!-- We will autonatically add the footer at the end. here. -->
