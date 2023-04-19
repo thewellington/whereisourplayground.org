@@ -6,6 +6,8 @@ keywords: [ "West Seattle", "Westcrest Park" ]
 open-graph: 
     image: "/assets/images/westcrest-play-area/IMG_5854.jpg"
 
+ribbon-text: "NEW!" # blank, so the ribbon doesn't show
+
 parks-dept:
     link: "https://www.seattle.gov/parks/allparks/westcrest-park"
     name: "Shannon Glass"
@@ -48,6 +50,9 @@ delays: 3
       <img src="/assets/images/westcrest-play-area/IMG_5857.jpg" class="d-block w-100" alt="...">
     </div>
   </div>
+  {% if page.ribbon-text %}
+  <div class="ribbon">{{ page.ribbon-text }}</div>
+  {% endif %}
 </div>
 
 <div id="lead" class="container py-5">

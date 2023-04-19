@@ -67,6 +67,9 @@ published : true
             <div class="card-footer">
               <a href="{{ p.url }}" class="btn btn-warning">More Detail</a>
             </div>
+            {% if p.ribbon-text %}
+            <div class="ribbon">{{ p.ribbon-text }}</div>
+            {% endif %}
           </div> <!-- end card -->
         </div>
       {% endfor %}

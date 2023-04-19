@@ -6,6 +6,7 @@ keywords: [ "West Seattle", "Lincoln Park", "Fauntleroy", "Gatewood", "Arbor Hei
 open-graph: 
     image: "/assets/images/lincoln-park-south/IMG_5759.jpg"
 
+ribbon-text: # blank, so the ribbon doesn't show
 
 section-links:
   - id: "#welcome"
@@ -38,10 +39,9 @@ section-links:
       <img src="/assets/images/lincoln-park-south/IMG_5760.jpg" class="d-block w-100" alt="...">
     </div>
   </div>
-
-<!-- when I want a red banner across an image. -->
-<!-- <div class="ribbon">THIS IS A TEST</div> -->
-
+  {% if page.ribbon-text %}
+  <div class="ribbon">{{ page.ribbon-text }}</div>
+  {% endif %}
 </div>
 
 <div id="lead" class="container py-5">

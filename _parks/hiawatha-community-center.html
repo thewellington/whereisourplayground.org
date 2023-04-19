@@ -6,6 +6,7 @@ keywords: [ "West Seattle", "Hiawatha", "Admiral", "Lafayette", "Madison", "West
 open-graph: 
     image: "/assets/images/hiawatha-community-center/IMG_5863.jpg"
 
+ribbon-text: "NEW!" # blank, so the ribbon doesn't show
 
 parks-dept:
     link: "https://www.seattle.gov/parks/about-us/projects/community-center-stabilization-overview/hiawatha-community-center-stabilization"
@@ -41,6 +42,9 @@ section-links:
       <img src="/assets/images/hiawatha-community-center/IMG_5864.jpg" class="d-block w-100" alt="...">
     </div>
   </div>
+  {% if page.ribbon-text %}
+  <div class="ribbon">{{ page.ribbon-text }}</div>
+  {% endif %}
 </div>
 
 <div id="lead" class="container py-5">

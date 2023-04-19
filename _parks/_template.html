@@ -7,6 +7,8 @@ open-graph:
 
 published: false  # change to 'true' when you want to publish the page
 
+ribbon-text: # blank, so the ribbon doesn't show
+
 parks-dept:
 	link:
  	name:
@@ -52,6 +54,9 @@ section-links:
       <img src="/assets/images/IMG_5760.jpg" class="d-block w-100" alt="...">
     </div>
   </div>
+  {% if page.ribbon-text %}
+  <div class="ribbon">{{ page.ribbon-text }}</div>
+  {% endif %}
 </div>
 
 <div id="lead" class="container py-5">
