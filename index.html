@@ -59,13 +59,13 @@ published : true
      	{% for p in park %}
         <div class="col-12">
           <div class="card text-bg-success mb-3 h-100 w-100">
-            <a href="{{ p.url }}"><img src="{{ p.open-graph.image }}" class="card-img-top" alt="..."></a>
+            <img src="{{ p.open-graph.image }}" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title"><a href="{{ p.url }}" class="text-bg-success">{{ p.title }}</a></h5>
+              <h5 class="card-title">{{ p.title }}</h5>
               <p class="card-text">{{ p.description | truncate: 135 }}</p>
             </div>
             <div class="card-footer">
-              <a href="{{ p.url }}" class="btn btn-warning">More Detail</a>
+              <a href="{{ p.url }}" class="btn btn-warning stretched-link">More Detail</a>
             </div>
             {% if p.ribbon-text %}
             <div class="ribbon">{{ p.ribbon-text }}</div>
