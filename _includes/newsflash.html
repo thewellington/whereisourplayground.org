@@ -1,0 +1,32 @@
+{%- assign data = site.data.newsflash | reverse %}
+{%- assign build_date = site.time | date: '%s' %}
+
+{%- for i in data %}
+  {%- assign start_date = i.start_date | date: '%s' %}
+  {%- assign end_date = i.end_date | date: '%s' %}
+  
+  {%- if build_date > start_date and build_date < end_date %}
+    {%- if i.status == "info" %}
+      {%- assign alert-status = "alert-info" %}
+    {%- elsif i.status == "success" %}
+      {%- assign alert-status = "alert-success" %}
+    {%- elsif i.status == "warning" %}
+      {%- assign alert-status = "alert-warning" %}
+    {%- elsif i.status == "danger" %}
+      {%- assign alert-status = "alert-danger" %}
+    {%- else %}
+      {%- assign alert-status = "alert-default" %}
+    {%- endif %}
+
+    {%- if i.channel == page.channel %}
+<div class="alert {{ alert-status }}" role="alert">
+  <h4 class="alert-heading">{{ i.title }}</h4>
+    <p>{{ i.pre_text }} <a href="{{ i.link | remove: '.html' }}" class="alert-link" target="_blank">{{ i.link_text }}</a> {{ i.post_text }}</p>
+      {%- if i.body_text %}
+    <hr />
+    <p class="mb-0">{{ i.body_text }}</p>
+      {%- endif %}
+</div>
+    {%- endif %}
+  {%- endif %}
+{%- endfor %}

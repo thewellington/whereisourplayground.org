@@ -1,0 +1,21 @@
+- title: "Ask Parks Yourself!"
+  channel: "hiawatha-community-center"
+  pre_text: "A Parks Representative will be at the next meeting of the"
+  link_text: "Admiral Neighborhood Association"
+  post_text: "on <strong>Tuesday May 9th at 7pm</strong> to talk about the Hiawatha Community Center project."
+  body_text: "Be sure to ask about the Play Area project too!"
+  start_date: 2023-04-19T00:00-07:00
+  end_date: 2023-05-10T00:00-08:00
+  status:  "success"
+  link: "https://www.connecttoadmiral.org"
+
+- title: "Ask Parks Yourself!"
+  channel: "hiawatha-play-area"
+  pre_text: "A Parks Representative will be at the next meeting of the"
+  link_text: "Admiral Neighborhood Association"
+  post_text: "on <strong>Tuesday May 9th at 7pm</strong> to talk about the Hiawatha Community Center project."
+  body_text: "Be sure to ask about the Play Area project too!"
+  start_date: 2023-04-19T00:00-07:00
+  end_date: 2023-05-10T00:00-08:00
+  status:  "success"
+  link: "https://www.connecttoadmiral.org"
