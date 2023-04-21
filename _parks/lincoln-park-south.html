@@ -8,6 +8,10 @@ open-graph:
 
 ribbon-text: # blank, so the ribbon doesn't show
 
+city-council:
+    link: "https://www.seattle.gov/council/herbold"
+    name: "Lisa Herbold"
+
 section-links:
   - id: "#welcome"
     title: "Welcome"
@@ -147,14 +151,4 @@ section-links:
     </div>
 </div>
 
-<div id="how-to-help" class="container-fluid">
-  <div class="container py-5">
-        <h2 class="display-3 text-center">How You Can Help</h2>
-        <p>Seattle Parks is not a very responsive organization.  In fairness they are understaffed and underfunded like every other part of our city.  If you want change, you are going to have to work at it.  Here are some things you can do to help.
-        
-    <ol>
-        <li><strong>Monitor the City's project page:</strong> <a href="https://www.seattle.gov/parks/about-us/projects/lincoln-park-south-play-area-renovation" target="_blank">https://www.seattle.gov/parks/about-us/projects/lincoln-park-south-play-area-renovation</a></li>
-        <li><strong>Contact Shannon Glass</strong> at Seattle Parks.  Ask for a <mark>project update</mark> and a <mark>full accounting of the project's delays dating back to 2017.</mark>  Shannon can be reached by email at <a href="mailto:Shannon.Glass@seattle.gov">Shannon.Glass@seattle.gov</a> or by phone at <a href="tel:+12067339319">206-733-9319</a></li>
-        <li><strong>Contact Councilmember Lisa Herbold.</strong>  Ask her when Parks will make good on one of their {{ site.data.numbers.number-of-delays }} delays since the start of the Lincoln Park South Play Area Replacement Project.  Council Member Herbold's contact info is here: <a href="https://www.seattle.gov/council/herbold" target="_blank">https://www.seattle.gov/council/herbold</a><li>
-  </div>
-</div>
+{% include how-to-help.html %}
