@@ -1,0 +1,26 @@
+<div id="how-to-help" class="container-fluid">
+<!-- Final DIV, how can people help you -->
+
+  <div class="container py-5">
+        <h2 class="display-3 text-center">How You Can Help</h2>
+        <p>Seattle Parks is not a very responsive organization.  In fairness they are understaffed and underfunded like every other part of our city.  If you want change, you are going to have to work at it.  Here are some things you can do to help.
+        
+    <ol>
+        <li><strong>Monitor the City's project page:</strong> <a href="{{ page.parks-dept.link }}" target="_blank">{{ page.parks-dept.link }}</a></li>
+        <li><strong>Contact {{ page.parks-dept.name }}</strong> at Seattle Parks.  Ask for a <mark>project update</mark> and a <mark>full accounting of the project's delays.</mark>
+        <br/>They can be reached by email at <a href="mailto:{{ page.parks-dept.email }}">{{ page.parks-dept.email }}</a>, or by phone at <a href="tel:+1{{ page.parks-dept.phone }}">{{ page.parks-dept.phone }}</a></li>
+        <li><strong>Contact Your Councilmembers.</strong>  Ask them when Parks will complete the {{ page.title }} project.</li>
+		<ul>			
+		{% assign council-members = site.data.city-council %}
+		{% assign district-members = council-members | where: "district", page.city-council.district %}
+		{% assign at-large-members = council-members | where: "district", nil %}
+		  {% for i in district-members %}
+			<li><strong><a href="{{ i.link }}target="_blank">{{ i.name }}</a></strong> (District {{ i.district }}) can be reached by email at <a href="mailto:+1{{ i.email }}">{{ i.email }}</a>, or by phone at <a href="tel:{{ i.phone }}">{{ i.phone }}</a>.</li>
+		  {% endfor %}		
+		  {% for i in at-large-members %}
+			<li><strong><a href="{{ i.link }}target="_blank">{{ i.name }}</a></strong> (At Large) can be reached by email at <a href="mailto:+1{{ i.email }}">{{ i.email }}</a>, or by phone at <a href="tel:{{ i.phone }}">{{ i.phone }}</a>.</li>
+		  {% endfor %}
+		</ul>
+    </ol>
+  </div>
+</div>

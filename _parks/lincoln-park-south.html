@@ -3,10 +3,19 @@ layout: page
 title: Lincoln Park (South)
 description: "In July 2017, after having already removed the zip line swing from the Lincoln Park South Play Area, Seattle Parks closed and subsequently removed the play structure citing termite damage as the reason.  Over the intervening years Seattle Parks has published replacement schedule after replacement schedule, each time citing various delays."
 keywords: [ "West Seattle", "Lincoln Park", "Fauntleroy", "Gatewood", "Arbor Heights", "Colman pool", "ferry", "Vashon", "Southworth" ]
+
 open-graph: 
     image: "/assets/images/lincoln-park-south/IMG_5759.jpg"
 
 ribbon-text: # blank, so the ribbon doesn't show
+parks-dept:
+    link: "https://www.seattle.gov/parks/about-us/projects/lincoln-park-south-play-area-renovation"
+    name: "Shannon Glass"
+    phone: "206-733-9313"
+    email: "Shannon.Glass@seattle.gov"
+
+city-council:
+    district: 1
 
 section-links:
   - id: "#welcome"
@@ -17,6 +26,10 @@ section-links:
     title: "By The Numbers"
   - id: "#how-to-help"
     title: "How To Help"
+    
+numbers:
+    delays: 9
+
 ---
 <div id="carouselSplash" class="carousel carousel-dark slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
@@ -121,7 +134,7 @@ section-links:
                 </div>
             </div>
         </div>
-        <p>There are {{ site.data.numbers.number-of-delays }} delays included in the timeline above.</p>
+        <p>There are {{ page.numbers.delays }} delays included in the timeline above.</p>
 
     <p class="small">Source: <a href="https://www.fauntleroy.net/issues/lincoln-park-south-play-area-closure/" target="_blank">Fauntleroy Community Association</a>
   </div>
@@ -132,7 +145,7 @@ section-links:
         <h2 class="display-3 text-center">By The Numbers...</h2>
         <div class="row py-5">
             <div class="col border-end">
-                <p class="h1 display-1 text-center">{{ site.data.numbers.number-of-delays }}</p>
+                <p class="h1 display-1 text-center">{{ page.numbers.delays }}</p>
                 <p class="h3 text-center test-wrap"><small>delays since July 2017</small></p>
             </div>
             <div class="col border-end">
@@ -147,14 +160,4 @@ section-links:
     </div>
 </div>
 
-<div id="how-to-help" class="container-fluid">
-  <div class="container py-5">
-        <h2 class="display-3 text-center">How You Can Help</h2>
-        <p>Seattle Parks is not a very responsive organization.  In fairness they are understaffed and underfunded like every other part of our city.  If you want change, you are going to have to work at it.  Here are some things you can do to help.
-        
-    <ol>
-        <li><strong>Monitor the City's project page:</strong> <a href="https://www.seattle.gov/parks/about-us/projects/lincoln-park-south-play-area-renovation" target="_blank">https://www.seattle.gov/parks/about-us/projects/lincoln-park-south-play-area-renovation</a></li>
-        <li><strong>Contact Shannon Glass</strong> at Seattle Parks.  Ask for a <mark>project update</mark> and a <mark>full accounting of the project's delays dating back to 2017.</mark>  Shannon can be reached by email at <a href="mailto:Shannon.Glass@seattle.gov">Shannon.Glass@seattle.gov</a> or by phone at <a href="tel:+12067339319">206-733-9319</a></li>
-        <li><strong>Contact Councilmember Lisa Herbold.</strong>  Ask her when Parks will make good on one of their {{ site.data.numbers.number-of-delays }} delays since the start of the Lincoln Park South Play Area Replacement Project.  Council Member Herbold's contact info is here: <a href="https://www.seattle.gov/council/herbold" target="_blank">https://www.seattle.gov/council/herbold</a><li>
-  </div>
-</div>
+{% include how-to-help.html %}

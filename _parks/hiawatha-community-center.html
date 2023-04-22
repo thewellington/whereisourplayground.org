@@ -15,6 +15,9 @@ parks-dept:
     phone: "206-684-0586"
     email: "Kelly.Goold@seattle.gov"
 
+city-council:
+    district: 1
+
 # Each main .container-fluid below has a unique id.  Use that id here, to create links in the navbar to take you to each section.
 
 section-links:
@@ -75,18 +78,4 @@ section-links:
 </div>
 
 
-<div id="how-to-help" class="container-fluid">
-<!-- Final DIV, how can people help you -->
-
-  <div class="container py-5">
-        <h2 class="display-3 text-center">How You Can Help</h2>
-        <p>Seattle Parks is not a very responsive organization.  In fairness they are understaffed and underfunded like every other part of our city.  If you want change, you are going to have to work at it.  Here are some things you can do to help.
-        
-    <ol>
-        <li><strong>Monitor the City's project page:</strong> <a href="{{ page.parks-dept.link }}" target="_blank">{{ page.parks-dept.link }}</a></li>
-        <li><strong>Contact {{ page.parks-dept.name }}</strong> at Seattle Parks.  Ask for a <mark>project update</mark> and a <mark>full accounting of the project's delays.</mark>  They can be reached by email at <a href="mailto:{{ page.parks-dept.email }}">{{ page.parks-dept.email }}</a> or by phone at <a href="tel:+1{{ page.parks-dept.phone }}">{{ page.parks-dept.phone }}</a></li>
-        <li><strong>Contact Councilmember Lisa Herbold.</strong>  Ask her when Parks will complete the Community Center project.  Council Member Herbold's contact info is here: <a href="https://www.seattle.gov/council/herbold" target="_blank">https://www.seattle.gov/council/herbold</a></li>
-  </div>
-</div>
-
-<!-- We will autonatically add the footer at the end. here. -->
+{% include how-to-help.html %}

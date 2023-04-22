@@ -1,6 +1,17 @@
 ---
 layout: page
 published : true
+
+
+
+section-links:
+  - id: "#projects"
+    title: "Projects We Are Monitoring"
+  - id: "#about"
+    title: "About"
+
+
+
 ---
 <div id="carouselSplash" class="carousel carousel-dark slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
@@ -49,7 +60,7 @@ published : true
 
 {% include navbar.html %}
 
-<div id="welcome" class="container-fluid text-bg-light">
+<div id="projects" class="container-fluid text-bg-light">
   <div class="container py-5">
   
       <h2 class="display-3 text-center">Projects We Are Monitoring</h2>
@@ -74,5 +85,14 @@ published : true
         </div>
       {% endfor %}
       </div> <!-- end row -->
+  </div>
+</div>
+
+<div id="about" class ="container-fluid bg-secondary text-light">
+  <div class="container py-5">
+      <h2 class="display-3 text-center">About</h2>
+      
+      <p><strong>Where Is Our Playground</strong> is a loose group of citizens, each of whom cares about our park system, and cares that Seattle Parks has not been effective in their communications with the citizens of Seattle.  A park is added to our "radar" when an individual brings it to our attention.  We then ask that individual to gather some information, and join us in maintaining these pages.  Some contributors can code, others just gather information about a specific park or two.  If you are interested in joing us, you may contribute using the <storng>Issues</strong> tracker at <a href="{{ site.github-url }}/issues" target="_blank" class="link-light">GitHub</a>.
+
   </div>
 </div>

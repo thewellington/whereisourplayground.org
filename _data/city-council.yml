@@ -1,0 +1,62 @@
+- id: 1
+  district: "1"
+  name: "Lisa Herbold"
+  link: "https://www.seattle.gov/council/herbold"
+  email: "Lisa.Herbold@seattle.gov"
+  phone: "206-684-8801"
+
+- id: 2
+  district: "2"
+  name: "Tammy Morales"
+  link: "https://www.seattle.gov/council/morales"
+  email: "Tammy.Morales@seattle.gov"
+  phone: "206-684-8802"
+
+- id: 3
+  district: "3"
+  name: "Kshama Sawant"
+  link: "https://www.seattle.gov/council/sawant"
+  email: "Kshama.Sawant@seattle.gov"
+  phone: "206-684-8803"
+
+- id: 4
+  district: "4"
+  name: "Alex Pedersen"
+  link: "https://www.seattle.gov/council/pedersen"
+  email: "Alex.Pedersen@seattle.gov"
+  phone: "206-664-8804"
+
+- id: 5
+  district: "5"
+  name: "Debora Juarez"
+  link: "https://www.seattle.gov/council/juarez"
+  email: "Debora.Juarez@seattle.gov"
+  phone: "206-664-8805"
+
+- id: 6
+  district: "6"
+  name: "Dan Strauss"
+  link: "https://www.seattle.gov/council/strauss"
+  email: "Dan.Strauss@seattle.gov"
+  phone: "206-664-8806"
+
+- id: 7
+  district: "7"
+  name: "Andrew Lewis"
+  link: "https://www.seattle.gov/council/lewis"
+  email: "Andrew.Lewis@seattle.gov"
+  phone: "206-664-8807"
+
+- id: 8
+  position: "8"
+  name: "Teresa Mosqueda"
+  link: "https://www.seattle.gov/council/mosqueda"
+  email: "Teresa.Mosqueda@seattle.gov"
+  phone: "206-664-8808"
+
+- id: 9
+  position: "9"
+  name: "Sara Nelson"
+  link: "https://www.seattle.gov/council/meet-the-council/sara-nelson"
+  email: "Sara.Nelson@seattle.gov"
+  phone: "206-664-8809"
