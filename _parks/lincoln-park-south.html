@@ -3,14 +3,19 @@ layout: page
 title: Lincoln Park (South)
 description: "In July 2017, after having already removed the zip line swing from the Lincoln Park South Play Area, Seattle Parks closed and subsequently removed the play structure citing termite damage as the reason.  Over the intervening years Seattle Parks has published replacement schedule after replacement schedule, each time citing various delays."
 keywords: [ "West Seattle", "Lincoln Park", "Fauntleroy", "Gatewood", "Arbor Heights", "Colman pool", "ferry", "Vashon", "Southworth" ]
+
 open-graph: 
     image: "/assets/images/lincoln-park-south/IMG_5759.jpg"
 
 ribbon-text: # blank, so the ribbon doesn't show
+parks-dept:
+    link: "https://www.seattle.gov/parks/about-us/projects/lincoln-park-south-play-area-renovation"
+    name: "Shannon Glass"
+    phone: "206-733-9313"
+    email: "Shannon.Glass@seattle.gov"
 
 city-council:
-    link: "https://www.seattle.gov/council/herbold"
-    name: "Lisa Herbold"
+    district: 1
 
 section-links:
   - id: "#welcome"
@@ -21,6 +26,10 @@ section-links:
     title: "By The Numbers"
   - id: "#how-to-help"
     title: "How To Help"
+    
+numbers:
+    delays: 9
+
 ---
 <div id="carouselSplash" class="carousel carousel-dark slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
@@ -125,7 +134,7 @@ section-links:
                 </div>
             </div>
         </div>
-        <p>There are {{ site.data.numbers.number-of-delays }} delays included in the timeline above.</p>
+        <p>There are {{ page.numbers.delays }} delays included in the timeline above.</p>
 
     <p class="small">Source: <a href="https://www.fauntleroy.net/issues/lincoln-park-south-play-area-closure/" target="_blank">Fauntleroy Community Association</a>
   </div>
@@ -136,7 +145,7 @@ section-links:
         <h2 class="display-3 text-center">By The Numbers...</h2>
         <div class="row py-5">
             <div class="col border-end">
-                <p class="h1 display-1 text-center">{{ site.data.numbers.number-of-delays }}</p>
+                <p class="h1 display-1 text-center">{{ page.numbers.delays }}</p>
                 <p class="h3 text-center test-wrap"><small>delays since July 2017</small></p>
             </div>
             <div class="col border-end">
