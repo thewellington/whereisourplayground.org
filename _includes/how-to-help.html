@@ -21,6 +21,11 @@
 			<li><strong><a href="{{ i.link }}target="_blank">{{ i.name }}</a></strong> (At Large) can be reached by email at <a href="mailto:+1{{ i.email }}">{{ i.email }}</a>, or by phone at <a href="tel:{{ i.phone }}">{{ i.phone }}</a>.</li>
 		  {% endfor %}
 		</ul>
+	    {% if page.contact == %}
+        <li>
+        <p><strong>Adopt this page.</strong> Seattle Parks is responsible for so many parks, and we don't have enough people to watch them all.  Join us!</p>
+        </li>
+        {% endif %}
     </ol>
   </div>
 </div>
