@@ -13,12 +13,12 @@
 		<ul>			
 		{% assign council-members = site.data.city-council %}
 		{% assign district-members = council-members | where: "district", page.city-council.district %}
-		{% assign at-large-members = council-members | where: "district", nil %}
+		{% assign at-large-members = council-members | where: "district", 'citywide' %}
 		  {% for i in district-members %}
 			<li><strong><a href="{{ i.link }}target="_blank">{{ i.name }}</a></strong> (District {{ i.district }}) can be reached by email at <a href="mailto:+1{{ i.email }}">{{ i.email }}</a>, or by phone at <a href="tel:{{ i.phone }}">{{ i.phone }}</a>.</li>
 		  {% endfor %}		
 		  {% for i in at-large-members %}
-			<li><strong><a href="{{ i.link }}target="_blank">{{ i.name }}</a></strong> (At Large) can be reached by email at <a href="mailto:+1{{ i.email }}">{{ i.email }}</a>, or by phone at <a href="tel:{{ i.phone }}">{{ i.phone }}</a>.</li>
+			<li><strong><a href="{{ i.link }}target="_blank">{{ i.name }}</a></strong> ({{ i.district }}) can be reached by email at <a href="mailto:+1{{ i.email }}">{{ i.email }}</a>, or by phone at <a href="tel:{{ i.phone }}">{{ i.phone }}</a>.</li>
 		  {% endfor %}
 		</ul>
 	    {% if page.contact == %}

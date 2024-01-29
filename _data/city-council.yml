@@ -49,6 +49,7 @@
 
 - id: 8
   position: "8"
+  district: "citywide"
   name: "Tanya Woo"
   link: "https://www.seattle.gov/council/woo"
   email: "tanya.woo@seattle.gov"
@@ -56,6 +57,7 @@
 
 - id: 9
   position: "9"
+  district: "citywide"
   name: "Sara Nelson"
   link: "https://www.seattle.gov/council/meet-the-council/sara-nelson"
   email: "sara.nelson@seattle.gov"
