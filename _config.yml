@@ -23,7 +23,7 @@ keywords: [ "playground", "park", "recreation", "community", "neighborhood", "ch
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://whereisourplayground.org" # the base hostname & protocol for your site, e.g. http://example.com
-github-url: https://github.com/thewellington/whereisourplayground.org
+github-url: https://github.com/thewellington/whereisourplayground.org/blob/main/README.md
 
 google-analytics-id: "G-36P0YGGG1N"
 
