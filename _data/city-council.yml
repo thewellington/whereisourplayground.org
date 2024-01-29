@@ -1,8 +1,8 @@
 - id: 1
   district: "1"
-  name: "Lisa Herbold"
-  link: "https://www.seattle.gov/council/herbold"
-  email: "Lisa.Herbold@seattle.gov"
+  name: "Robb Saka"
+  link: "https://www.seattle.gov/council/saka"
+  email: "rob.saka@seattle.gov"
   phone: "206-684-8801"
 
 - id: 2
@@ -14,23 +14,23 @@
 
 - id: 3
   district: "3"
-  name: "Kshama Sawant"
-  link: "https://www.seattle.gov/council/sawant"
-  email: "Kshama.Sawant@seattle.gov"
+  name: "Joy Hollingsworth"
+  link: "https://www.seattle.gov/council/hollingsworth"
+  email: "joy.hollingsworth@seattle.gov"
   phone: "206-684-8803"
 
 - id: 4
   district: "4"
-  name: "Alex Pedersen"
+  name: "Maritza Rivera"
   link: "https://www.seattle.gov/council/pedersen"
-  email: "Alex.Pedersen@seattle.gov"
+  email: "maritza.rivera@seattle.gov"
   phone: "206-664-8804"
 
 - id: 5
   district: "5"
-  name: "Debora Juarez"
-  link: "https://www.seattle.gov/council/juarez"
-  email: "Debora.Juarez@seattle.gov"
+  name: "Cathy Moore"
+  link: "https://www.seattle.gov/council/moore"
+  email: "cathy.moore@seattle.gov"
   phone: "206-664-8805"
 
 - id: 6
@@ -42,21 +42,21 @@
 
 - id: 7
   district: "7"
-  name: "Andrew Lewis"
-  link: "https://www.seattle.gov/council/lewis"
-  email: "Andrew.Lewis@seattle.gov"
+  name: "Robert Kettle"
+  link: "https://www.seattle.gov/council/kettle"
+  email: "robert.kettle@seattle.gov"
   phone: "206-664-8807"
 
 - id: 8
   position: "8"
-  name: "Teresa Mosqueda"
-  link: "https://www.seattle.gov/council/mosqueda"
-  email: "Teresa.Mosqueda@seattle.gov"
+  name: "Tanya Woo"
+  link: "https://www.seattle.gov/council/woo"
+  email: "tanya.woo@seattle.gov"
   phone: "206-664-8808"
 
 - id: 9
   position: "9"
   name: "Sara Nelson"
   link: "https://www.seattle.gov/council/meet-the-council/sara-nelson"
-  email: "Sara.Nelson@seattle.gov"
+  email: "sara.nelson@seattle.gov"
   phone: "206-664-8809"
