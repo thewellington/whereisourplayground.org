@@ -2,13 +2,14 @@ body {
 
 }
 
+
 div.ribbon {
     height: 35px;
-    width: 180px;
-    background-color: #9C1B21;
+    width: 200px;
+    /* background-color: #9C1B21; */
     position: absolute;
-    top: 48px;
-    right: -6px;
+    top: 48px; /* v distance off the top */
+    right: 5px; /* where ribbon meets right edge */
     text-align: center;
     color: #FFF;
     font-weight: 600;
@@ -21,20 +22,22 @@ div.ribbon {
     transform: rotate(35deg);
 }
 
-.ribbon:before {
-    box-sizing: border-box;
-    border-style: solid;
-    border-color: transparent;
-    border-width: 37px;
-    border-left-width: 53px;
-    border-right-width: 26px;
-    content: "";
-    display: block;
-    position: absolute;
-    top: -2px;
-    left: -49px;
-    width: 148%;
-    border-top-width: 0px;
-    border-bottom-color: #9c1b21;
-    z-index: -1;
+
+.ribbon:before
+{
+	box-sizing: border-box;
+	border-style: solid;
+	border-color: transparent;
+	border-width: 37px;
+	border-left-width: 53px;
+	border-right-width: 26px;
+	content: "";
+	display: block;
+	position: absolute;
+	top: 4px; /* where ribbon meets top edge */
+	left: -50px;
+	width: 148%;
+	border-top-width: 0px;
+	border-bottom-color: #9c1b21;
+	z-index: -1;
 }
