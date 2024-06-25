@@ -30,11 +30,11 @@ div.ribbon {
     border-right-width: 26px;
     content: "";
     display: block;
-    left: -49px;
     position: absolute;
-    width: 141%;
+    top: -2px;
+    left: -49px;
+    width: 148%;
     border-top-width: 0px;
     border-bottom-color: #9c1b21;
-    top: -2px;
     z-index: -1;
 }
