@@ -1,15 +1,17 @@
 ---
 layout: page
-title: Morgan Junction Park Addition # The title of your page
-description: "Seattle Parks purchased this lot in 2014 to expand the park and provide additional open space for this high-density neighborhood."
+title: Morgan Junction Park Addition
+description: "WSB has tracked soil cleanup, SDOT right-of-way friction, budget fights over a “skate dot,” and a May 6, 2026 follow-up on the expansion; Seattle Parks cited value engineering, permits through fall 2026, and construction possibly starting late summer 2027."
 open-graph: 
-    image: "/assets/images/morgan-junction-park-addition/option1.png" # image for facebook and google cards.  also used on homepage cards
+    image: "/assets/images/morgan-junction-park-addition/option1.png"
 
-published: true  # change to 'true' when you want to publish the page
+published: true
 
-ribbon-text:  # blank, so the ribbon doesn't show
+ribbon-text: "Interim use open · build ~2027"
 
-contact:  # Who is responsible for this page?
+keywords: [ "West Seattle", "Morgan Junction", "skate dot", "MJAWA", "Seattle Parks", "West Seattle Blog" ]
+
+contact:
 
 parks-dept:
     link: "https://www.seattle.gov/parks/about-us/projects/morgan-junction-park-addition"
@@ -19,8 +21,6 @@ parks-dept:
 
 city-council:
     district: 1
-
-# Each main .container-fluid below has a unique id.  Use that id here, to create links in the navbar to take you to each section.
 
 section-links:
   - id: "#welcome"
@@ -37,20 +37,9 @@ section-links:
 
 
 <div id="carouselSplash" class="carousel carousel-dark slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselSplash" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselSplash" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselSplash" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="/assets/images/morgan-junction-park-addition/option1.png" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item active">
-      <img src="/assets/images/morgan-junction-park-addition/option2.png" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item active">
-      <img src="/assets/images/morgan-junction-park-addition/option3.png" class="d-block w-100" alt="...">
+      <img src="/assets/images/morgan-junction-park-addition/option1.png" class="d-block w-100" alt="Morgan Junction Park expansion concept">
     </div>
   </div>
   {% if page.ribbon-text %}
@@ -59,47 +48,50 @@ section-links:
 </div>
 
 <div id="lead" class="container py-5">
-  <p class="lead">In 2014, Seattle Parks and Recreation purchased the .47-acre property at 6311 California Ave SW, north of Morgan Junction Park, to expand the park and provide additional open space for this high-density neighborhood. The design will incorporate accessibility in compliance with the Americans with Disabilities Act (ADA) and additional park elements will be incorporated after gathering public input.   <strong>Today we ask...</strong></p>
+  <p class="lead">The city bought the <strong>0.47-acre</strong> “hole in the ground” north of Morgan Junction Park years ago to add capacity in a dense neighborhood. What’s in the headlines now—via the <a href="https://westseattleblog.com" target="_blank" rel="noopener noreferrer">West Seattle Blog</a> and groups like <a href="https://mjawa.org/" target="_blank" rel="noopener noreferrer">MJAWA</a>—isn’t just turf and paths: it’s <strong>contaminated-soil remediation</strong>, an <strong>SDOT/Parks</strong> tangle over streets and transfers, <strong>value engineering</strong> after pricier-than-expected earthwork, and whether the beloved <strong>all-wheels / “skate dot”</strong> survives in-scope or needs community fundraising.</p>
 </div>
 
-<h1 class="display-1 text-center">{{ site.title }}</h1>
+<h1 class="display-1 text-center">{{ page.title }}</h1>
 
 {% include navbar.html %}
 
-<div id="welcome" class="container-fluid bg-success text-light"">
+<div id="welcome" class="container-fluid bg-success text-light">
   <div class="container py-5">
       <h2 class="display-3 text-center">Welcome</h2>
       
-      <P> Due to COVID and other factors, Seattle Parks has posted the below on their <a href="{{ page.parks-dept.link }}" target="_blank" class="link-light">project page.</a></P>
-      
-      <blockquote class="blockquote">"In the summer of 2020, the City of Seattle turned its focus to essential functions to address the pandemic and economic crisis, which required a significant reprioritization of resources. After careful analysis of equity considerations, health and safety concerns, and alignment with essential functions, Seattle Parks and Recreation (SPR) suspended many capital projects including the West Seattle Junction Park Development project. As promised at the time, SPR worked to restore funding in future budget cycles for suspended projects. In September 2022, the Seattle City Council, acting in their role as Seattle Park District Board, passed a new six-year funding plan for the 2023-2028 Park District cycle which includes funding for this project and many more. SPR staff are now reprioritizing projects in this six-year funding plan using several criteria, including equity, and creating a plan for implementation. We anticipate having a plan in the second quarter of 2023 that will guide our Park District capital work over the next six years. We will update the schedule below when we have the workplan completed."<blockquote>
+      <p>WSB’s <strong>July&nbsp;2025</strong> recap of a Morgan Community Association briefing described a site still awaiting full cleanup, unclear budget math between community advocates and Parks, and the possibility that the skateable feature would be <strong>“decoupled”</strong> without outside money—while soil work and Eddy Street right-of-way issues dragged on.</p>
+
+      <p>A <strong>May&nbsp;6,&nbsp;2026</strong> <a href="https://westseattleblog.com/2026/05/followup-parks-confirms-open-house-to-see-newest-design-for-expanding-morgan-junction-park-including-skatedot-all-wheels-area/" target="_blank" rel="noopener noreferrer">WSB follow-up</a> tied to an official open house quoted Seattle Parks saying the <strong>expansion parcel is open for interim turf use</strong> until Phase&nbsp;II fencing, pointed readers to <a href="https://engageseattleparks.com/morgan-junction-park-expansion" target="_blank" rel="noopener noreferrer">Engage Seattle Parks</a> for the schematic package, and summarized city timing: <strong>permits/final design through fall&nbsp;2026</strong>, <strong>construction targeted to start by late summer&nbsp;2027</strong>, following heavier-than-expected soil remediation.</p>
+
+      <p class="mb-0">Pandemic-era suspension and Park District refits matter here too; the broad policy language mirrors other landbanked sites—see the official <a href="{{ page.parks-dept.link }}" target="_blank" class="link-light">Morgan Junction Park Addition</a> page for the current canonical budget and milestone table.</p>
   </div>
 </div>
-
-
-
-
-
 
 <div id="updates" class="container-fluid text-bg-secondary">
   <div class="container py-5">
 
     <h2 class="display-3 text-center">Updates</h2>
+    <p class="text-center lead">Selected <a href="https://westseattleblog.com" target="_blank" rel="noopener noreferrer" class="link-light">West Seattle Blog</a> articles, newest first.</p>
     <div class="container">
             <div class="row">
                 <div class="col-12">
                     <ul>
-                        <li class="p-6"><strong>2023-04-20</strong> - According to the <a href="https://westseattleblog.com/2023/04/progress-for-morgan-junction-park-expansion-festival-preview-and-what-else-morgan-community-association-discussed-this-quarter/" class="link-light">West Seattle Blog</a>, it seems that some progress is being made in arranging for the cleanup of the site, which is required before Parks can begin work to construct a park there.</li>                    
+                        <li class="p-6 mb-3"><strong>May 6, 2026</strong> — WSB follow-up on Parks’ announcement: schematic open house at The Kenney <strong>May&nbsp;13</strong>, 6–7:30&nbsp;pm; interim public access until Phase&nbsp;II; value engineering after soil work; permits/final design through fall&nbsp;2026; construction “anticipated” by late summer&nbsp;2027. <a href="https://westseattleblog.com/2026/05/followup-parks-confirms-open-house-to-see-newest-design-for-expanding-morgan-junction-park-including-skatedot-all-wheels-area/" target="_blank" rel="noopener noreferrer" class="link-light">FOLLOWUP: Parks confirms ‘open house’… skatedot/all-wheels area</a></li>
 
-                        <li class="p-6"><strong>2023-11</strong> - Expected in 2025 (with skateboard park). <a href="https://westseattleblog.com/2023/11/park-projects-meeting-report-2-west-seattle-off-leash-area-status-and-other-non-pickleball-notes/" target="_blank" class="link-light">PARK PROJECTS MEETING, REPORT #2: West Seattle off-leash area status, and other non-pickleball notes</a></li>
+                        <li class="p-6 mb-3"><strong>April 2026</strong> — Supporters and MoCA meeting preview ahead of Parks’ design drop. <a href="https://westseattleblog.com/2026/04/see-updated-design-for-morgan-skatedot-plus-update-on-ev-lot-morgan-community-associations-spring-2026-gathering/" target="_blank" rel="noopener noreferrer" class="link-light">See updated design for Morgan ‘skatedot’ plus update on EV lot @ MoCA spring gathering</a></li>
 
+                        <li class="p-6 mb-3"><strong>July 2025</strong> — After a Parks briefing: soil cleanup timeline, SDOT/Parks property transfer, budget questions, fundraising pressure on all-wheels feature, MoCA letter of unresolved questions. <a href="https://westseattleblog.com/2025/07/morgan-junction-park-expansion-more-questions-than-answers-after-latest-briefing/" target="_blank" rel="noopener noreferrer" class="link-light">Morgan Junction Park expansion: More questions than answers after latest briefing</a></li>
+
+                        <li class="p-6 mb-3"><strong>July 2024</strong> — Design committee traction for an all-wheels / skate-dot concept (WSB headline coverage). <a href="https://westseattleblog.com/2024/07/all-wheels-in-morgan-junction-one-step-closer-to-a-skate-dot-design-for-park/" target="_blank" rel="noopener noreferrer" class="link-light">ALL-WHEELS IN MORGAN JUNCTION: One step closer to a ‘skate dot’ design</a></li>
+
+                        <li class="p-6 mb-3"><strong>November 2023</strong> — Capitol Hill meeting shorthand mentioning Morgan (and skate element) with broader West Seattle project slate. <a href="https://westseattleblog.com/2023/11/park-projects-meeting-report-2-west-seattle-off-leash-area-status-and-other-non-pickleball-notes/" target="_blank" rel="noopener noreferrer" class="link-light">PARK PROJECTS MEETING, REPORT #2</a></li>
+
+                        <li class="p-6 mb-3"><strong>April 2023</strong> — Neighborhood association notes on site cleanup progress ahead of construction. <a href="https://westseattleblog.com/2023/04/progress-for-morgan-junction-park-expansion-festival-preview-and-what-else-morgan-community-association-discussed-this-quarter/" target="_blank" rel="noopener noreferrer" class="link-light">Progress for Morgan Junction Park expansion… MoCA quarterly</a></li>
                     </ul>
                 </div>
             </div>
         </div>
   </div>
 </div>
-
-
 
 {% include how-to-help.html %}
