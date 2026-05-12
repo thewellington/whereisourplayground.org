@@ -9,6 +9,11 @@ Welcome to the project. Here we try to hold Seattle Parks accountable for the nu
 
 Once you get set up you can start with some basic park page maintenance.
 
+### Development environment
+
+- With [Nix](https://nixos.org/) and [direnv](https://direnv.net/): `direnv allow` loads `flake.nix` (Ruby 3.3.x and Bundler). Then run `bundle install` and `bundle exec jekyll serve`.
+- Without Nix: install Ruby 3.3 (see `.ruby-version`), then the same `bundle` commands.
+
 - New parks go in `/_parks`
 - you can use `/_parks/_template.html` to get started
 - all images go in `/assets/images/<NAME OF PARK HERE>/` in order to get pulled into the LFS repository
@@ -29,6 +34,6 @@ Once you get set up you can start with some basic park page maintenance.
 - West Arboretum Tot Lot
 
 ## Ideas to get Parks to Pay Attention
-- Make up stickers with the site URL `http://www.whereisourplayground.org` and a QR code that links to that page.
+- Make up stickers with the site URL `https://whereisourplayground.org` and a QR code that links to that page.
 - Go to your neighborhood council or association and ask them to encourage Parks to pay attention to your park
 - Contact your council members, letting them know that you would like their help in getting Parks to pay attention to your park.
