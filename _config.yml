@@ -47,6 +47,7 @@ include:
 
 exclude:
   - README.md
+  - TECH_README.md
   # Editor / OS / VCS (not site content)
   - .cursor/
   - .DS_Store
