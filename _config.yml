@@ -23,13 +23,15 @@ keywords: [ "playground", "park", "recreation", "community", "neighborhood", "ch
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://whereisourplayground.org" # the base hostname & protocol for your site, e.g. http://example.com
+domain: "whereisourplayground.org" # hostname only (for twitter:domain, etc.)
+default_open_graph_image: "/android-chrome-512x512.png"
+default_open_graph_image_alt: "Where Is Our Playground"
 github-url: https://github.com/thewellington/whereisourplayground.org/blob/main/README.md
 
 google-analytics-id: "G-36P0YGGG1N"
 
 
 # Build settings
-#theme: minima
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
@@ -41,6 +43,22 @@ include:
 
 exclude:
   - README.md
+  # Editor / OS / VCS (not site content)
+  - .cursor/
+  - .DS_Store
+  - .git/
+  - .gitignore
+  # Tooling & CI (not site content)
+  - .github/
+  - .envrc
+  - .direnv/
+  - .ruby-version
+  - .netlify/
+  - flake.nix
+  - flake.lock
+  - package.json
+  - package-lock.json
+  # Ruby / Node / Jekyll build artifacts
   - .sass-cache/
   - .jekyll-cache/
   - gemfiles/

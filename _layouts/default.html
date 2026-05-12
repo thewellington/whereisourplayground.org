@@ -19,20 +19,19 @@
 
 	<!-- open-graph and twitter metadata -->
 		<meta property="og:locale" content="en_US" />
-		<meta property="og:type" content="webpage" />
+		<meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image">
-        <meta property="twitter:domain" content="{{ site.url }}">
+        <meta property="twitter:domain" content="{{ site.domain }}">
 		<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
         <meta property="twitter:url" content="{{ site.url }}{{ page.url }}">
+		<meta property="og:site_name" content="{{ site.title | strip_html }}">
 	  {% if page.title %}
 		<meta property="og:title" content="{{ page.title }}">
-		<meta property="og:site_name" content="{{ page.title }}"> 
         <meta name="twitter:title" content="{{ page.title }}">
 	  {% else %}
 		<meta property="og:title" content="{{ site.title }}">
-		<meta property="og:site_name" content="{{ site.title }}"> 
         <meta name="twitter:title" content="{{ site.title }}">
-	  {% endif %}	  
+	  {% endif %}
 	  {% if page.description %}
 		<meta property="og:description" content="{{ page.description }}">
 		<meta name="twitter:description" content="{{ page.description }}">
@@ -40,18 +39,15 @@
 		<meta property="og:description" content="{{ site.description }}">
 		<meta name="twitter:description" content="{{ site.description }}">
 	  {% endif %}
-	  {% if page.open-graph.image %}	
+	  {% if page.open-graph.image %}
 		<meta property="og:image" content="{{ site.url }}{{ page.open-graph.image }}" />
         <meta name="twitter:image" content="{{ site.url }}{{ page.open-graph.image }}">
       {% else %}
-		<meta property="og:image" content="{{ site.url }}/assets/images/lincoln-park-south/IMG_5759.jpg" />
-        <meta name="twitter:image" content="{{ site.url }}/assets/images/lincoln-park-south/IMG_5759.jpg">
+		<meta property="og:image" content="{{ site.url }}{{ site.default_open_graph_image }}" />
+        <meta name="twitter:image" content="{{ site.url }}{{ site.default_open_graph_image }}">
+		<meta property="og:image:alt" content="{{ site.default_open_graph_image_alt }}" />
+		<meta name="twitter:image:alt" content="{{ site.default_open_graph_image_alt }}" />
       {% endif %}
-      <!--
-        <meta property="og:image:alt" content="" />
-        <meta property="ogimage:width" content="">
-        <meta property="ogimage:height" content="">
-      -->
 	<!-- end open-graph and twitter metadata -->
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
