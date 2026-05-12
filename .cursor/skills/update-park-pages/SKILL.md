@@ -25,7 +25,7 @@ description: >-
 ## Copy rules
 
 - **Completed vs open:** If a project has reopened or finished, rewrite lead/welcome/ribbon so nothing still says “today we wait” or “years without.” Keep a short accountability angle if the site mission warrants it.
-- **Ribbon:** Short status (e.g. reopening month/year, “bids closed,” “interim use open”). Blank `ribbon-text:` hides ribbon.
+- **Ribbon:** Short status (e.g. reopening, bids closed). Blank `ribbon-text:` hides it. Optional **`ribbon_complete: true`** (green, project done) or **`ribbon_new: true`** (yellow, newly tracked). If both are set, **green wins**. Unflagged ribbon stays red.
 - **Updates section:** Newest first; each bullet ties to a **specific WSB post** or official page; include full `https://` link, `target="_blank"` `rel="noopener noreferrer"`, and `class="link-light"` on dark bands.
 - **Front matter:** Refresh `description` and `keywords` when the story changes; keep `open-graph.image` path valid.
 

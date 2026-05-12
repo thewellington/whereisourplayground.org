@@ -8,6 +8,8 @@ open-graph:
 published: false  # change to 'true' when you want to publish the page
 
 ribbon-text: "NEW!" # blank, so the ribbon doesn't show
+# ribbon_complete: true   # optional: green ribbon when the park project is done
+ribbon_new: false         # optional: true = yellow ribbon for newly tracked projects (ignored if ribbon_complete is true)
 
 contact:  # Who is responsible for this page?
 
@@ -61,9 +63,7 @@ section-links:
       <img src="/assets/images/IMG_5760.jpg" class="d-block w-100" alt="...">
     </div>
   </div>
-  {% if page.ribbon-text %}
-  <div class="ribbon">{{ page.ribbon-text }}</div>
-  {% endif %}
+  {% include park-ribbon.html %}
 </div>
 
 <div id="lead" class="container py-5">

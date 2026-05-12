@@ -1,0 +1,14 @@
+{% comment %}
+  page.ribbon-text (required to show ribbon)
+  page.ribbon_complete — true = green (finished project)
+  page.ribbon_new — true = yellow (new on the radar). If both flags are set, green wins.
+{% endcomment %}
+{% if page.ribbon-text %}
+  {% assign ribbon_extra = '' %}
+  {% if page.ribbon_complete %}
+    {% assign ribbon_extra = ' ribbon-complete' %}
+  {% elsif page.ribbon_new %}
+    {% assign ribbon_extra = ' ribbon-new' %}
+  {% endif %}
+  <div class="ribbon{{ ribbon_extra }}">{{ page.ribbon-text }}</div>
+{% endif %}

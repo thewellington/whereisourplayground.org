@@ -79,7 +79,7 @@ section-links:
               <a href="{{ p.url }}" class="btn btn-warning stretched-link">More Detail</a>
             </div>
             {% if p.ribbon-text %}
-            <div class="ribbon">{{ p.ribbon-text }}</div>
+            <div class="ribbon{% if p.ribbon_complete %} ribbon-complete{% elsif p.ribbon_new %} ribbon-new{% endif %}">{{ p.ribbon-text }}</div>
             {% endif %}
           </div> <!-- end card -->
         </div>

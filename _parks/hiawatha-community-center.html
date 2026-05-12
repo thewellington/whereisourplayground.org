@@ -7,6 +7,7 @@ open-graph:
     image: "/assets/images/hiawatha-community-center/IMG_5863.jpg"
 
 ribbon-text: "Reopened Feb 2026"
+ribbon_complete: true
 
 channel: "hiawatha-community-center"
 
@@ -51,9 +52,7 @@ section-links:
       <img src="/assets/images/hiawatha-community-center/IMG_5864.jpg" class="d-block w-100" alt="Hiawatha Community Center grounds">
     </div>
   </div>
-  {% if page.ribbon-text %}
-  <div class="ribbon">{{ page.ribbon-text }}</div>
-  {% endif %}
+  {% include park-ribbon.html %}
 </div>
 
 
