@@ -1,64 +1,67 @@
+# Seattle City Council — synced with https://www.seattle.gov/council/meet-the-council
+# Update when membership or contact info changes.
+
 - id: 1
   district: "1"
-  name: "Robb Saka"
-  link: "https://www.seattle.gov/council/saka"
-  email: "rob.saka@seattle.gov"
+  name: "Rob Saka"
+  link: "https://www.seattle.gov/council/members/rob-saka"
+  email: "Rob.Saka@seattle.gov"
   phone: "206-684-8801"
 
 - id: 2
   district: "2"
-  name: "Tammy Morales"
-  link: "https://www.seattle.gov/council/morales"
-  email: "Tammy.Morales@seattle.gov"
+  name: "Eddie Lin"
+  link: "https://www.seattle.gov/council/members/eddie-lin"
+  email: "Eddie.Lin@seattle.gov"
   phone: "206-684-8802"
 
 - id: 3
   district: "3"
   name: "Joy Hollingsworth"
-  link: "https://www.seattle.gov/council/hollingsworth"
-  email: "joy.hollingsworth@seattle.gov"
+  link: "https://www.seattle.gov/council/members/joy-hollingsworth"
+  email: "Joy.Hollingsworth@seattle.gov"
   phone: "206-684-8803"
 
 - id: 4
   district: "4"
   name: "Maritza Rivera"
-  link: "https://www.seattle.gov/council/pedersen"
-  email: "maritza.rivera@seattle.gov"
-  phone: "206-664-8804"
+  link: "https://www.seattle.gov/council/members/maritza-rivera"
+  email: "Maritza.Rivera@seattle.gov"
+  phone: "206-684-8804"
 
 - id: 5
   district: "5"
-  name: "Cathy Moore"
-  link: "https://www.seattle.gov/council/moore"
-  email: "cathy.moore@seattle.gov"
-  phone: "206-664-8805"
+  name: "Debora Juarez"
+  link: "https://www.seattle.gov/council/members/debora-juarez"
+  email: "Debora.Juarez@seattle.gov"
+  phone: "206-684-8805"
 
 - id: 6
   district: "6"
   name: "Dan Strauss"
-  link: "https://www.seattle.gov/council/strauss"
+  link: "https://www.seattle.gov/council/members/dan-strauss"
   email: "Dan.Strauss@seattle.gov"
-  phone: "206-664-8806"
+  phone: "206-684-8806"
 
 - id: 7
   district: "7"
   name: "Robert Kettle"
-  link: "https://www.seattle.gov/council/kettle"
+  link: "https://www.seattle.gov/council/members/bob-kettle"
   email: "robert.kettle@seattle.gov"
-  phone: "206-664-8807"
+  phone: "206-684-8807"
 
 - id: 8
   position: "8"
   district: "citywide"
-  name: "Tanya Woo"
-  link: "https://www.seattle.gov/council/woo"
-  email: "tanya.woo@seattle.gov"
-  phone: "206-664-8808"
+  name: "Alexis Mercedes Rinck"
+  link: "https://www.seattle.gov/council/members/alexis-mercedes-rinck"
+  email: "AlexisMercedes.Rinck@seattle.gov"
+  phone: "206-684-8808"
 
 - id: 9
   position: "9"
   district: "citywide"
-  name: "Sara Nelson"
-  link: "https://www.seattle.gov/council/meet-the-council/sara-nelson"
-  email: "sara.nelson@seattle.gov"
-  phone: "206-664-8809"
+  name: "Dionne Foster"
+  link: "https://www.seattle.gov/council/members/dionne-foster"
+  email: "Dionne.Foster@seattle.gov"
+  phone: "206-684-8809"
