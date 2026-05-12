@@ -25,9 +25,27 @@ description: >-
 ## Copy rules
 
 - **Completed vs open:** If a project has reopened or finished, rewrite lead/welcome/ribbon so nothing still says “today we wait” or “years without.” Keep a short accountability angle if the site mission warrants it.
-- **Ribbon:** Short status (e.g. reopening, bids closed). Blank `ribbon-text:` hides it. Optional **`ribbon_complete: true`** (green, project done) or **`ribbon_new: true`** (yellow, newly tracked). If both are set, **green wins**. Unflagged ribbon stays red.
+- **Ribbon:** See [Ribbons](#ribbons) below.
 - **Updates section:** Newest first; each bullet ties to a **specific WSB post** or official page; include full `https://` link, `target="_blank"` `rel="noopener noreferrer"`, and `class="link-light"` on dark bands.
 - **Front matter:** Refresh `description` and `keywords` when the story changes; keep `open-graph.image` path valid.
+
+## Ribbons
+
+Folded corner on park pages and on the homepage project cards.
+
+| Front matter | Effect |
+|--------------|--------|
+| `ribbon-text:` | **Required** to show a ribbon. Empty or omitted → no ribbon (see `_parks/_template.html` for placeholders). Short phrase only; it appears on cards and the park hero. |
+| `ribbon_complete: true` | **Green** fold — use when the **park project** (rebuild, major repair, reopening) is done. Copy on the page should match (no “still closed” whiplash). |
+| `ribbon_new: true` | **Yellow** fold — use when a page is **newly tracked** on the site. |
+
+**Precedence:** If both `ribbon_complete` and `ribbon_new` are true, **green wins** (complete beats new).
+
+**Implementation (do not drift):**
+
+- Park body: `{% include park-ribbon.html %}` — reads `page.ribbon-text`, `page.ribbon_complete`, `page.ribbon_new`.
+- Homepage cards: `index.html` — same logic on each `p` in the parks loop (`p.ribbon-text`, etc.).
+- Styles: `assets/css/style.css` — base `.ribbon` (red), `.ribbon.ribbon-complete::before`, `.ribbon.ribbon-new` / `::before` (yellow with dark text).
 
 ## Layout & UX
 
@@ -48,7 +66,8 @@ description: >-
 - [ ] Completed projects: no stale “still closed” language
 - [ ] Updates list ordered; links and link-light on dark sections
 - [ ] Adjacent sections use different text-bg-* / container spelling
-- [ ] Carousel / OG / description / ribbon consistent
+- [ ] Carousel / OG / description consistent with ribbon flags (see Ribbons section above)
+- [ ] Ribbons: `ribbon-text` matches story; `ribbon_complete` / `ribbon_new` only when accurate; precedence respected
 - [ ] Optional: city-council.yml if Seattle roster changed
 - [ ] jekyll build passes
 ```
