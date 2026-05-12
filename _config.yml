@@ -28,6 +28,10 @@ default_open_graph_image: "/android-chrome-512x512.png"
 default_open_graph_image_alt: "Where Is Our Playground"
 github-url: https://github.com/thewellington/whereisourplayground.org/blob/main/README.md
 
+# Homepage “Projects We Are Monitoring”: in-progress first, then completed (A–Z within each).
+# Only this many cards are shown; raise when you want more on the grid.
+homepage_parks_limit: 10
+
 google-analytics-id: "G-36P0YGGG1N"
 
 

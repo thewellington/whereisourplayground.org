@@ -65,9 +65,20 @@ section-links:
   
       <h2 class="display-3 text-center">Projects We Are Monitoring</h2>
 
-     	{% assign park = site.parks %}      
+      {% comment %}
+        Unpublished park pages (e.g. _template) are excluded. In-progress — not ribbon_complete —
+        sorts first; completed (ribbon_complete) last. Each group A–Z by title. Only the first
+        site.homepage_parks_limit cards render (see _config.yml).
+      {% endcomment %}
+      {% assign homepage_cap = site.homepage_parks_limit | default: 10 %}
+      {% assign park_docs = site.parks | where_exp: "p", "p.published != false" %}
+      {% assign in_progress = park_docs | where_exp: "p", "p.ribbon_complete != true" | sort: "title" %}
+      {% assign completed = park_docs | where_exp: "p", "p.ribbon_complete == true" | sort: "title" %}
+      {% assign homepage_parks = in_progress | concat: completed %}
       <div class="row row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
-     	{% for p in park %}
+      {% assign homepage_shown = 0 %}
+      {% for p in homepage_parks %}
+        {% if homepage_shown < homepage_cap %}
         <div class="col-12">
           <div class="card text-bg-success mb-3 h-100 w-100">
             <img src="{{ p.open-graph.image }}" class="card-img-top" alt="...">
@@ -83,6 +94,8 @@ section-links:
             {% endif %}
           </div> <!-- end card -->
         </div>
+        {% assign homepage_shown = homepage_shown | plus: 1 %}
+        {% endif %}
       {% endfor %}
       </div> <!-- end row -->
   </div>

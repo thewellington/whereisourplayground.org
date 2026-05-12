@@ -44,10 +44,8 @@ Folded corner on park pages and on the homepage project cards.
 **Implementation (do not drift):**
 
 - Park body: `{% include park-ribbon.html %}` — reads `page.ribbon-text`, `page.ribbon_complete`, `page.ribbon_new`.
-- Homepage cards: `index.html` — same logic on each `p` in the parks loop (`p.ribbon-text`, etc.).
+- Homepage cards: `index.html` — ribbon classes on each `p`; grid shows **in-progress** (no `ribbon_complete`) first, **completed** last, **A–Z by title** within each group, at most **`homepage_parks_limit`** cards (`_config.yml`, default 10). Pages with **`published: false`** are omitted.
 - Styles: `assets/css/style.css` — base `.ribbon` (red), `.ribbon.ribbon-complete::before`, `.ribbon.ribbon-new` / `::before` (yellow with dark text).
-
-## Layout & UX
 
 - **`section-links`** `id`s must match `id` on each major band (`#welcome`, `#updates`, etc.).
 - **Adjacent bands:** Do not stack two blocks with the same Bootstrap `text-bg-*`. Typical alternation: `text-bg-success` → `text-bg-secondary` → `text-bg-info` (or `text-bg-dark` only if intentional). Fix typos like `conatiner-fluid` → `container-fluid`.
