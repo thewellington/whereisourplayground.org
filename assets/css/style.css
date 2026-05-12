@@ -4,17 +4,26 @@ body {
 
 
 div.ribbon {
-    height: 35px;
+    box-sizing: border-box;
     width: 200px;
+    min-height: 35px;
+    height: auto;
     /* background-color: #9C1B21; */
     position: absolute;
     top: 48px; /* v distance off the top */
     right: 5px; /* where ribbon meets right edge */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     color: #FFF;
     font-weight: 600;
-    font-size: 24px;
-    white-space: nowrap;
+    font-size: 16px;
+    line-height: 1.2;
+    padding: 3px 6px;
+    white-space: normal;
+    overflow-wrap: break-word;
+    hyphens: auto;
     -webkit-transform: rotate(35deg);
     -moz-transform: rotate(35deg);
     -ms-transform: rotate(35deg);
@@ -40,4 +49,17 @@ div.ribbon {
 	border-top-width: 0px;
 	border-bottom-color: #9c1b21;
 	z-index: -1;
+}
+
+/* Completed park projects — Bootstrap-success green */
+.ribbon.ribbon-complete::before {
+	border-bottom-color: #198754;
+}
+
+/* New / just-added projects — warning yellow (dark text for contrast) */
+.ribbon.ribbon-new {
+	color: #212529;
+}
+.ribbon.ribbon-new::before {
+	border-bottom-color: #ffc107;
 }
